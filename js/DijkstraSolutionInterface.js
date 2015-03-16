@@ -99,6 +99,7 @@ DijkstraSolutionInterface = function() {
         return barrier;
     }
 
+    // TODO - Normalize the barrier based on the graph size
     function _createRectangleBarrier() {
         var barrier = [];
 
@@ -112,6 +113,7 @@ DijkstraSolutionInterface = function() {
         return barrier;
     }
 
+    // TODO - Normalize the barrier based on the graph size
     function _createSlantBarrier() {
         var barrier = [],
             x,
@@ -127,6 +129,7 @@ DijkstraSolutionInterface = function() {
         return barrier;
     }
 
+    // TODO - Normalize the barrier based on the graph size
     function _createAngleBarrier() {
         var barrier = [],
             x,
