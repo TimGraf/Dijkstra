@@ -195,7 +195,7 @@ DijkstraSolutionInterface = function() {
                 neighborGraphIndex = _getNodeIndexFromGraph(neighbor, graph),
                 neighborQueueIndex = _getQueueIndex(neighborGraphIndex, queue);
 
-            if (neighborQueueIndex > 0) {
+            if (neighborQueueIndex >= 0) {
 
                 if (altDist < queue[neighborQueueIndex].dist) {
                     queue[neighborQueueIndex].dist = altDist;

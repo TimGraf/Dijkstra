@@ -24,7 +24,7 @@ function createGraph() {
         graph,
         solution;
 
-    graph    = dijkstraSolutionInterface.createGraphNodesWithBarrier(dijkstraSolutionInterface.SLANT_BARRIER, numXNodes, numYNodes);
+    graph    = dijkstraSolutionInterface.createGraphNodesWithBarrier(dijkstraSolutionInterface.ANGLE_BARRIER, numXNodes, numYNodes);
     solution = dijkstraSolutionInterface.createSolutionNodes(graph, sourceNode, destinationNode);
 
     graphicsInterface.init(numXNodes, numYNodes);
