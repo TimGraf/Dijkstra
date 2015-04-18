@@ -1,5 +1,5 @@
 window.onload = function() {
-    createGraph();
+    createGraph('');
 };
 
 // List of dependant JavaScript files for this module
@@ -14,7 +14,7 @@ for (var i = 0; i < jsFiles.length; i++) {
     document.write("<script type='text/javascript' src='" + jsFiles[i] + "'></script>");
 }
 
-function createGraph() {
+function createGraph(barrier) {
     var numXNodes                 = 50,
         numYNodes                 = 50,
         graphicsInterface         = new GraphicsInterface(),
@@ -24,7 +24,7 @@ function createGraph() {
         graph,
         solution;
 
-    graph    = dijkstraSolutionInterface.createGraphNodesWithBarrier(dijkstraSolutionInterface.ANGLE_BARRIER, numXNodes, numYNodes);
+    graph    = dijkstraSolutionInterface.createGraphNodesWithBarrier(barrier, numXNodes, numYNodes);
     solution = dijkstraSolutionInterface.createSolutionNodes(graph, sourceNode, destinationNode);
 
     graphicsInterface.init(numXNodes, numYNodes);

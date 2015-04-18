@@ -7,6 +7,15 @@
         <script src="js/dijkstra.js"></script>
     </head>
     <body>
+        <div id="controls">
+            <label>Select Barrier Type: </label>
+            <select onchange="createGraph(this.value)">
+                <option value="">None</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="angle">Angle</option>
+                <option value="slant">Slant</option>
+            </select>
+        </div>
         <div id="container">
         </div>
     </body>
